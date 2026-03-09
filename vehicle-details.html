@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Details | Car Tracker</title>
+
+    <link rel="stylesheet" href="css/layout.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class=" sidebar-header">
+                <h2 class="logo"> Car Tracker</h2>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="vehicles.html" class="nav-link active">Vehicles</a>
+                <a href="services.html" class="nav-link">Service Tracker</a>
+                <a href="notifications.html" class="nav-link">Notifications</a>
+            </nav>
+
+        </aside>
+
+        <!--Main -->
+        <div class="main">
+            <header class="topbar">
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <h3 class="topbar-title">Vehicle Details</h3>
+            </header>
+
+            <div class="content">
+                <div id="vehicle-details"></div>
+
+                <h2>Service History</h2>
+
+                <div id="service-list"></div>
+
+                <button id="add-services-btn" class="primary-btn">+ Add Service</button>
+
+                <div class="vehicle-actions">
+                    <button id="edit-vehicle-btn" class="primary-btn">Edit Vehicle</button>
+                    <button id="delete-vehicle-btn" class="danger-btn">Delete Vehicle</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/pages/vehicle-details.js"></script>
+</body>
+
+</html>

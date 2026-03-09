@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Vehicle | Car Tracker</title>
+
+<link rel="stylesheet" href="css/layout.css">
+</head>
+
+<body>
+
+<div class="app">
+
+<!-- Sidebar -->
+<aside class="sidebar" id="sidebar">
+
+<div class="sidebar-header">
+<h2 class="logo">Car Tracker</h2>
+</div>
+
+<nav class="sidebar-nav">
+<a href="dashboard.html" class="nav-link">Dashboard</a>
+<a href="vehicles.html" class="nav-link active">Vehicles</a>
+<a href="services.html" class="nav-link">Service Tracker</a>
+<a href="notifications.html" class="nav-link">Notifications</a>
+</nav>
+
+</aside>
+
+<!-- Main -->
+<div class="main">
+
+<header class="topbar">
+<button class="menu-toggle" id="menu-toggle">☰</button>
+<h3 class="topbar-title">Add / Edit Vehicle</h3>
+</header>
+
+<div class="content">
+
+<form id="vehicle-form" class="vehicle-form">
+
+<label for="vehicle-name">Vehicle Name</label>
+<input type="text" id="vehicle-name" required>
+
+<label for="vehicle-type">Vehicle Type</label>
+<input type="text" id="vehicle-type" required>
+
+<label for="vehicle-mileage">Mileage</label>
+<input type="number" id="vehicle-mileage" required>
+
+<button type="submit" class="primary-btn">Save Vehicle</button>
+
+</form>
+
+</div>
+</div>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/pages/add-vehicles.js"></script>
+
+</body>
+</html>

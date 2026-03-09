@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles | Car Tracker</title>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="css/layout.css">
+   <!-- <link rel="stylesheet" href="css/global.css"> -->
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+        <h2 class="logo">CarTracker</h2>
+    </div>
+
+    <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-link">Dashboard</a>
+        <a href="vehicles.html" class="nav-link active">Vehicles</a>
+        <a href="services.html" class="nav-link">Service Tracker</a>
+        <a href="notifications.html" class="nav-link">Notifications</a>
+    </nav>
+
+</aside>
+
+        <!-- Main Area -->
+        <div class="main">
+
+            <!-- Topbar -->
+            <header class="topbar">
+                <button class="menu-toggle" id="menu-toggle">☰</button>
+                <h3 class="topbar-title">Vehicles</h3>
+            </header>
+
+            <!-- Page Content -->
+            <div class="content">
+
+                <div class="vehicles-header">
+                    <h2>My Vehicles</h2>
+                    <button id="add-vehicle-btn" class="primary-btn">+ Add Vehicle</button>
+                </div>
+
+                <div id="vehicle-list" class="vehicle-list"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script type="module" src="js/pages/vehicles.js"></script>
+
+</body>
+</html>
